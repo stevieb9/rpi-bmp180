@@ -9,6 +9,7 @@ WriteMakefile(
     VERSION_FROM     => 'lib/RPi/BMP180.pm',
     ABSTRACT_FROM    => 'lib/RPi/BMP180.pm',
     LICENSE          => 'perl_5',
+    LIBS             => ['-lwiringPi', '-lwiringPiDev'],
     PL_FILES         => {},
     MIN_PERL_VERSION => 5.006,
     CONFIGURE_REQUIRES => {
@@ -18,8 +19,8 @@ WriteMakefile(
         'Test::More' => 0,
     },
     PREREQ_PM => {
-        #'ABC'              => 1.6,
-        #'Foo::Bar::Module' => 5.0401,
+        'WiringPi::API'           => 2.36.3,
+        'RPi::WiringPi::Constant' => 0.02,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'RPi-BMP180-*' },
