@@ -1,4 +1,4 @@
 Revision history for RPi-BMP180
 
-2.36.1  2017-01-23
-        - initial version
+2.36.1  2017-02-02
+        - initial standalone version harvested from RPi::WiringPi
