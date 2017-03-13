@@ -19,7 +19,7 @@ WriteMakefile(
         'Test::More' => 0,
     },
     PREREQ_PM => {
-        'WiringPi::API'           => 2.36.4,
+        'WiringPi::API'           => 2.3608,
         'RPi::WiringPi::Constant' => 0.02,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
