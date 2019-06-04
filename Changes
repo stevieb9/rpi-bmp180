@@ -1,6 +1,8 @@
 Revision history for RPi-BMP180
 
 2.3605 UNREL
+        - added Github info to Makefile.PL
+        - changed from RPi::WiringPi::Const to RPi::Const
 
 2.3604  2017-06-28
         - bump prereq of WiringPi::API to 2.3612
