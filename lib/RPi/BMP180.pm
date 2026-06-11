@@ -6,7 +6,6 @@ use warnings;
 our $VERSION = '2.3605';
 
 use WiringPi::API qw(:all);
-use RPi::WiringPi::Constant qw(:all);
 
 sub new {
     my ($class, $pin_base) = @_;
