@@ -1,7 +1,14 @@
 Revision history for RPi-BMP180
 
 3.1802 UNREL
-    -
+    - Added TECHNICAL INFORMATION POD (DEVICE SPECIFICS, REGISTER MAP, ON THE
+      WIRE, DATASHEET): chip capabilities, wiring, the full register map, and
+      the I2C frames wiringPi's devLib bmp180.c produces, verified against
+      the Bosch BST-BMP180-DS000-09 datasheet
+    - Fixed POD typos: SYNOPSIS constructor call was RPi::BMP180($base),
+      missing the ->new; temp() misspelled Fahrenheit and Celsius
+    - Bundled the datasheet as docs/datasheet/BMP180.pdf and repointed the
+      DATASHEET POD section at it instead of the web URL
 
 3.1801    2026-06-12
         - added Github info to Makefile.PL

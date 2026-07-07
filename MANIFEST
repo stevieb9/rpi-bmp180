@@ -1,4 +1,5 @@
 Changes
+docs/datasheet/BMP180.pdf
 lib/RPi/BMP180.pm
 Makefile.PL
 MANIFEST			This list of files
