@@ -3,6 +3,8 @@ package RPi::BMP180;
 use strict;
 use warnings;
 
+use Carp qw(croak);
+
 our $VERSION = '3.1802';
 
 use WiringPi::API qw(:all);
@@ -30,13 +32,13 @@ sub _pin_base {
 
     if (defined $base){
         if ($base !~ /^\d+$/){
-            die "_pin_base() requires an integer\n";
+            croak "_pin_base() requires an integer";
         }
         $self->{bmp_pin_base} = $base;
     }
 
     if (! defined $self->{bmp_pin_base}){
-        die "_pin_base() has not yet been set...\n";
+        croak "_pin_base() has not yet been set...";
     }
     return $self->{bmp_pin_base};
 }

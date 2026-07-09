@@ -12,6 +12,10 @@ Revision history for RPi-BMP180
     - Dropped the vestigial LIBS => ['-lwiringPi', '-lwiringPiDev'] from
       Makefile.PL; this dist is pure Perl (no XS), so nothing links those
       libraries - the entry was inert leftover from a former XS incarnation
+    - _pin_base() now croaks (with the caller's location) instead of die on a
+      non-integer or unset pin base
+    - Added t/05-unit.t: HW-free coverage of _pin_base() validation (non-integer
+      and unset croaks, valid set/get) and new() croaking without a pin base
 
 3.1801    2026-06-12
         - added Github info to Makefile.PL
