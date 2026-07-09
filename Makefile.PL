@@ -9,7 +9,6 @@ WriteMakefile(
     VERSION_FROM     => 'lib/RPi/BMP180.pm',
     ABSTRACT_FROM    => 'lib/RPi/BMP180.pm',
     LICENSE          => 'perl_5',
-    LIBS             => ['-lwiringPi', '-lwiringPiDev'],
     PL_FILES         => {},
     MIN_PERL_VERSION => 5.006,
     META_MERGE => {

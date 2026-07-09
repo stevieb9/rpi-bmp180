@@ -9,6 +9,9 @@ Revision history for RPi-BMP180
       missing the ->new; temp() misspelled Fahrenheit and Celsius
     - Bundled the datasheet as docs/datasheet/BMP180.pdf and repointed the
       DATASHEET POD section at it instead of the web URL
+    - Dropped the vestigial LIBS => ['-lwiringPi', '-lwiringPiDev'] from
+      Makefile.PL; this dist is pure Perl (no XS), so nothing links those
+      libraries - the entry was inert leftover from a former XS incarnation
 
 3.1801    2026-06-12
         - added Github info to Makefile.PL
